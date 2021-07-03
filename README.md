@@ -1,0 +1,3 @@
+# Docker Image for Zephyr
+
+The image is meant to be used for development and in the GitLab CI. The image is 'only' 4.23GB big. It includes the [Zephyr arm toolchain](https://github.com/zephyrproject-rtos/sdk-ng) and [Zephyr](https://github.com/zephyrproject-rtos/zephyr) itself. To reduce the size I removed tensorflow and the hal for espressif, silabs and stm32 SoCs. For programming and debugging nrfjprog and JLink is included in the image.
